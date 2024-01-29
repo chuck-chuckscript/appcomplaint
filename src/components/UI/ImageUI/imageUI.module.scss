@@ -1,0 +1,28 @@
+.ui{
+    position: relative;
+    width: 100%;
+    img{
+        width: 100%;
+    }
+    button{
+        cursor: pointer;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+
+        border-radius: 0;
+        font-size: 20px;
+        transition: .2s ease;
+        z-index: 20;
+    }
+    button:hover + img{
+        opacity: 0.5;
+    }
+
+}

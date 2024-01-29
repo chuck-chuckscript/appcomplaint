@@ -1,0 +1,17 @@
+.uiCheckbox{
+    border: 1px solid rgba(128, 128, 128, 0.548);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: .2s ease;
+}
+.uiCheckbox.checked{
+    border-color: #000;
+    background-color: #000;
+    color: white;
+}

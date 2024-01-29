@@ -1,0 +1,217 @@
+.modalAuth{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+    z-index: 100;
+
+    form{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 80px 30px;
+        
+        & > *{
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        button{
+            padding: 10px;
+        }
+ 
+    }
+}
+.modalReport{
+    overflow-y: scroll;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+    z-index: 100;
+
+    form{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 80px 30px;
+        
+        & > *{
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        button{
+            padding: 10px;
+        }
+        & > select{
+            padding: 10px;
+            border: 1px solid rgba(128, 128, 128, 0.548);
+            border-radius: 10px;
+            background-color: white;
+        }
+        & > textarea{
+            padding: 10px;
+            min-height: 100px;
+            border: 1px solid rgba(128, 128, 128, 0.548);
+            border-radius: 10px;
+            resize: vertical;
+        }
+        
+ 
+    }
+}
+.close{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px !important;
+    border-radius: 10px;
+    
+    
+}
+.error{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -300px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    padding: 10px;
+    width: 500px;
+    margin: 0 auto;
+    z-index: 110;
+    color: red;
+    border-radius: 10px;
+    transition: .2s ease;
+    text-align: center;
+    word-break: break-all;
+}
+.error.active{
+    top: 30px;
+}
+.statusChange{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.329);
+    width: 100%;
+    height: 100%;
+    form{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        padding: 60px 20px;
+        border-radius: 10px;
+        background-color: white;
+        width: 700px;
+        select{
+            padding: 10px;
+            border-radius: 10px;
+        }
+        button{
+            padding: 10px;
+        }
+        *{
+            margin: 10px 0;
+        }
+    }
+    z-index: 100;
+}
+.modalCat{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.349);
+    z-index: 100;
+    div.listContainer{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 60px 20px;
+        width: 400px;
+        border-radius: 10px;
+        button.close{
+            top: 5px;
+        }
+        & > button:not(.close){
+            margin: 10px 0;
+            padding: 10px;
+        }
+    }
+    div.list{
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #00000056;
+    }
+    div.listItem{
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #00000056;
+        border-radius: 10px;
+        margin: 5px 0;
+        
+        button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: white;
+            color: red;
+            font-size: 20px;
+            border: 1px solid red;
+        }
+    }
+    div.formAdding{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+        border: 1px solid #00000056;
+        padding: 10px;
+        border-radius: 10px;
+        & > *{
+            margin: 5px 0;
+        }
+    }
+
+}
